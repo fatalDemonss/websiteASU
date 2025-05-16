@@ -1,0 +1,625 @@
+/* Общие стили и центрирование контента */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #D9D9D9;
+  overflow-x: hidden; /* убираем горизонтальную прокрутку */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Центрирование содержимого внутри .content */
+.content {
+  text-align: center;
+  padding-top: 60px; /* подстраивай под высоту меню */
+}
+
+/* Заголовки */
+.welcome-title {
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+.welcome-title3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.welcome-title-admin {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+
+
+.welcome-title-admin2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.welcome-title-admin3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.welcome-title-admin4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: -160px;
+}
+
+.register-title
+{
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 50px;
+}
+
+.pleaseAuth {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.textAbout {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 146%;
+  font-weight: bold;
+}
+
+.textAbout1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 146%;
+  max-width: 800px;
+}
+
+
+/* Ошибка */
+p[style*="color:red"] {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p[style*="color:green"] {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Входные поля */
+.center-container {
+  position: fixed; /* фиксируем меню */
+  top: 0;          /* прижать к верхнему краю */
+  left: 0;         /* прижать к левому краю */
+  width: 100%;     /* чтобы меню растягивалось на всю ширину */
+  background-color: #d9d9d9; /* или другой фон для меню */
+  z-index: 1000;   /* чтобы меню было поверх другого контента */
+  display: flex;   /* чтобы ссылки в ряд */
+  justify-content: center; /* выровнять по центру */
+  padding: 10px 0; /* внутренние отступы */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* тень для отделения меню */
+}
+
+.center-container1 {
+
+  background-color: #d9d9d9; /* или другой фон для меню */
+  display: flex;   /* чтобы ссылки в ряд */
+  justify-content: center; /* выровнять по центру */
+  padding: 10px 0; /* внутренние отступы */
+  margin-bottom: 20px;
+}
+
+.comment-textarea {
+
+  background-color: #A8A8A8;
+  font-size: 22px;
+  width: 380px;
+  height: 45px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: #535353;
+  border: none;
+  margin-top: 5px;
+
+}
+
+.comment-textarea2 {
+
+  background-color: #A8A8A8;
+  font-size: 22px;
+  width: 380px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: #535353;
+  border: none;
+  margin-top: 5px;
+
+}
+
+input.edit-input {
+  width: 350px;
+  height: 45px;
+  background-color: #A8A8A8;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 22px;
+  color: #535353;
+  outline: none;
+  font-weight: bold;
+  line-height: 45px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+input.edit-input::placeholder {
+  color: #535353;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+#role {
+  width: 380px;
+  height: 45px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #A8A8A8;
+  color: #535353;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 15px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+#role option {
+  background-color: #A8A8A8;
+  color: #535353;
+  font-weight: bold;
+}
+
+input.login-input {
+  width: 350px;
+  height: 54px;
+  background-color: #A8A8A8;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 25px;
+  color: #535353;
+  outline: none;
+  font-weight: bold;
+  line-height: 54px;
+}
+
+input.login-input::placeholder {
+  color: #535353;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input.found-input {
+  width: 250px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border: 3px solid;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #535353;
+  outline: none;
+  font-weight: bold;
+  line-height: 54px;
+}
+
+input.found-input::placeholder {
+  color: #676767;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sort_text
+{
+  margin-left: 30px;
+  font-size: 23px;
+}
+
+#sort {
+  margin-top: 70px;
+  margin-left: 10px;
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+#sort option {
+  background-color: #000000;
+  color: #D9D9D9;
+}
+
+
+
+/* Кнопка */
+.admin-button {
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-left: 40px;
+  padding: 5px 15px;
+}
+
+.admin-button22 {
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-left: 30px
+  padding: 5px 15px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+
+
+  background-color: #d9d9d9;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  border-collapse: separate;
+  border-spacing: 0 -3px;
+}
+
+.styled-table th {
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.styled-table td {
+  padding: 0;
+
+  text-align: center;
+
+}
+
+.table-input {
+
+  width: 100%;
+
+  height: 36px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: #d9d9d9;
+  box-sizing: border-box;
+
+  margin: -1px;
+  border-style: solid;
+  border-width: 2px 1.5px; /* 2px сверху/снизу, 1px слева/справа */
+  border-color: black;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Левая крайняя ячейка в строке */
+.table-row .table-input:first-child {
+  border-left-width: 2px;
+}
+
+/* Первая ячейка — усиливаем левую границу */
+tr td:first-child .table-input {
+  border-left-width: 2px;
+}
+
+/* Последняя с input — усиливаем правую границу */
+tr td:nth-child(5) .table-input {
+  border-right-width: 2px;
+}
+
+.icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+.null-button-admin {
+  display: inline-block; /* обязательно для <a> */
+  text-align: center;     /* горизонтальное выравнивание текста */
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;  /* убирает подчёркивание */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+/*  margin-bottom: 90px;*/
+}
+
+.edit-button {
+  width: 175px;
+  height: 54px;
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+}
+
+.block-button {
+  width: 250px;
+  height: 54px;
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-button {
+  width: 175px;
+  height: 54px;
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+
+}
+
+.login-button-client {
+  width: 250px;
+  height: 54px;
+  background-color: #D9D9D9;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.exit-button-admin {
+  width: 250px;
+  height: 54px;
+  display: inline-block; /* обязательно для <a> */
+  line-height: 54px;      /* вертикальное выравнивание текста */
+  text-align: center;     /* горизонтальное выравнивание текста */
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;  /* убирает подчёркивание */
+  margin-top: 40px;
+  margin-bottom: 20px;
+/*  margin-bottom: 90px;*/
+}
+
+.menu_btn_active
+{
+  padding: 0 15px;
+  display: inline-block; /* обязательно для <a> */
+  line-height: 40px;      /* вертикальное выравнивание текста */
+  text-align: center;     /* горизонтальное выравнивание текста */
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;  /* убирает подчёркивание */
+  margin: 0 10px;
+
+}
+
+.menu_btn
+{
+  padding: 5px 15px;
+  display: inline-block; /* обязательно для <a> */
+  text-align: center;     /* горизонтальное выравнивание текста */
+  background-color: #D9D9D9;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;  /* убирает подчёркивание */
+  margin: 0 10px;
+
+}
+
+.exit-button {
+  width: 250px;
+  height: 54px;
+  display: inline-block; /* обязательно для <a> */
+  line-height: 54px;      /* вертикальное выравнивание текста */
+  text-align: center;     /* горизонтальное выравнивание текста */
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;  /* убирает подчёркивание */
+  margin-top: 100px;
+  margin-bottom: 20px;
+/*  margin-bottom: 90px;*/
+}
+
+.register-button
+{
+  width: 300px;
+  height: 54px;
+  background-color: #000000;
+  color: #D9D9D9;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.login-button:hover {
+  opacity: 0.75;
+}
+
+/* Ссылка регистрации */
+.register-link {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+/* Картинка слева внизу с эффектом сдвига */
+.image-bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 25%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
+
+.image-bottom-left-small
+{
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width:10%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
+/* Картинка слева внизу с эффектом сдвига */
+.image-bottom-left-small img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-bottom-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-bottom-left:hover {
+  transform: translateX(20px);
+}
+
+.image-bottom-left:hover img {
+  transform: scale(1.05);
+}
+
+.image-bottom-left-small:hover {
+  transform: translateX(20px);
+}
+
+.image-bottom-left-small:hover img {
+  transform: scale(1.05);
+}
