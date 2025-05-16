@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'site_db';
 $user = 'root';
-$pass = ''; // Укажи свой пароль от MySQL, если есть
+$pass = ''; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 

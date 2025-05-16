@@ -21,7 +21,7 @@ html, body {
 /* Центрирование содержимого внутри .content */
 .content {
   text-align: center;
-  padding-top: 60px; /* подстраивай под высоту меню */
+  padding-top: 60px; 
 }
 
 /* Заголовки */

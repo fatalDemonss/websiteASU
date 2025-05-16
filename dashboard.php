@@ -4,7 +4,7 @@ $user = $_SESSION['user'];
 
 // Если это клиент — сразу отправляем в клиентский раздел
 if ($user['role'] === 'client') {
-    header("Location: client_panel.php"); // создайте client_panel.php, если нужно
+    header("Location: client_panel.php"); 
     exit();
 }
 
@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: client_panel.php");  // Перенаправляем клиента
             exit();
         } else {
-            // Можно добавить обработку случая, если клиент пытается войти как админ
             echo "<p>У вас нет прав входа как админ.</p>";
         }
     }

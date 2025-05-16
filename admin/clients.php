@@ -8,7 +8,7 @@ $nameFilter = isset($_GET['name']) ? trim($_GET['name']) : '';
 $emailFilter = isset($_GET['email']) ? trim($_GET['email']) : '';
 $sortOrder = isset($_GET['sort']) ? $_GET['sort'] : 'asc'; // по умолчанию А→Я
 
-// Безопасная проверка сортировки
+
 $sortOrder = strtolower($sortOrder) === 'desc' ? 'DESC' : 'ASC';
 
 $sql = "SELECT * FROM users WHERE role = 'client' AND is_blacklisted = 0";
